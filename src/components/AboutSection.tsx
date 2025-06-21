@@ -1,6 +1,7 @@
 import React from 'react';
 import { Lightbulb, Code, LineChart, Trophy } from 'lucide-react';
 import { aboutMe } from '../data/content';
+import { useTranslation } from 'react-i18next';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -21,13 +22,15 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 );
 
 const AboutSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="section bg-neutral-50 dark:bg-neutral-900">
       <div className="container-custom">
         <div className="section-title">
-          <h2 className="mb-2">About <span className="text-primary-300">Me</span></h2>
+          <h2 className="mb-2">{t('About')} <span className="text-primary-300">{t('About Me').split(' ')[1]}</span></h2>
           <p className="text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-            Get to know my background, skills, and what drives me as a data professional.
+            {t('Get to know my background, skills, and what drives me as a data professional.')}
           </p>
         </div>
         
@@ -46,25 +49,25 @@ const AboutSection: React.FC = () => {
           </div>
           
           <div>
-            <p className="text-lg text-primary-300 font-medium mb-4">Who I Am</p>
+            <p className="text-lg text-primary-300 font-medium mb-4">{t('Who I Am')}</p>
             <h3 className="text-3xl font-bold mb-6">
-              A Passionate <span className="text-primary-300">Data Scientist</span> & Analytical Thinker
+              {t('A Passionate Data Scientist & Analytical Thinker').split('&')[0]} <span className="text-primary-300">{t('A Passionate Data Scientist & Analytical Thinker').split('&')[1]}</span>
             </h3>
             
             <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-              {aboutMe.intro}
+              {t('aboutIntro')}
             </p>
             
             <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-              {aboutMe.description}
+              {t('aboutDescription')}
             </p>
             
             <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed">
-              {aboutMe.mission}
+              {t('aboutMission')}
             </p>
             
             <a href="#contact" className="btn-primary">
-              Let's Connect
+              {t("Let's Connect")}
             </a>
           </div>
         </div>
@@ -72,23 +75,23 @@ const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard 
             icon={<Lightbulb size={24} />}
-            title="Problem Solver"
-            description="I approach complex data challenges with creativity and analytical thinking to find innovative solutions."
+            title={t('Problem Solver')}
+            description={t('I approach complex data challenges with creativity and analytical thinking to find innovative solutions.')}
           />
           <FeatureCard 
             icon={<Code size={24} />}
-            title="Technical Expert"
-            description="Proficient in Python, R, SQL, and various data science tools and libraries for effective data manipulation."
+            title={t('Technical Expert')}
+            description={t('Proficient in Python, R, SQL, and various data science tools and libraries for effective data manipulation.')}
           />
           <FeatureCard 
             icon={<LineChart size={24} />}
-            title="Data Storyteller"
-            description="I transform complex data into clear, compelling visualizations and narratives that drive decision-making."
+            title={t('Data Storyteller')}
+            description={t('I transform complex data into clear, compelling visualizations and narratives that drive decision-making.')}
           />
           <FeatureCard 
             icon={<Trophy size={24} />}
-            title="Continuous Learner"
-            description="Always expanding my knowledge in the rapidly evolving field of data science and machine learning."
+            title={t('Continuous Learner')}
+            description={t('Always expanding my knowledge in the rapidly evolving field of data science and machine learning.')}
           />
         </div>
       </div>
