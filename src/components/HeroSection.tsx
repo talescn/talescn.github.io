@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Download } from 'lucide-react';
 import SocialLinks from './SocialLinks';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -50,26 +52,25 @@ const HeroSection: React.FC = () => {
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <p className="text-primary-300 font-medium mb-4 animate-in">Hello, I'm</p>
+            <p className="text-primary-300 font-medium mb-4 animate-in">{t("Hello, I'm")}</p>
             <h1 className="mb-4 animate-in" style={{animationDelay: '0.1s'}}>
               Tales Noronha
               <span className="block text-2xl sm:text-3xl mt-2 text-neutral-600 dark:text-neutral-300 font-normal">
-                Data Scientist & Analyst
+                {t('Data Scientist & Analyst')}
               </span>
             </h1>
             
             <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-8 animate-in" style={{animationDelay: '0.2s'}}>
-              Transforming raw data into meaningful insights and actionable strategies.
-              Passionate about solving complex problems through data-driven approaches.
+              {t('Transforming raw data into meaningful insights and actionable strategies. Passionate about solving complex problems through data-driven approaches.')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-in" style={{animationDelay: '0.3s'}}>
               <a href="#projects" className="btn-primary">
-                View My Work
+                {t('View My Work')}
               </a>
               <a href="#" className="btn-outline flex items-center justify-center">
                 <Download size={18} className="mr-2" />
-                Download Resume
+                {t('Download Resume')}
               </a>
             </div>
             
@@ -103,7 +104,7 @@ const HeroSection: React.FC = () => {
             className="flex flex-col items-center text-neutral-500 dark:text-neutral-400 hover:text-primary-300 dark:hover:text-primary-300 transition-colors"
             aria-label="Scroll down"
           >
-            <span className="text-sm mb-2">Scroll Down</span>
+            <span className="text-sm mb-2">{t('Scroll Down')}</span>
             <ArrowDown size={20} />
           </a>
         </div>
