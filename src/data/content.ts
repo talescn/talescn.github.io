@@ -159,7 +159,7 @@ export const education: Education[] = [
 ];
 
 export const aboutMe = {
-  intro: "I'm Tales Noronha, a data science enthusiast with a background in statistics, currently transitioning into the exciting world of data science.",
-  description: "With a solid foundation in statistics and a growing expertise in data science methodologies, I'm passionate about extracting meaningful insights from complex datasets. My journey began in traditional statistical analysis, but I've since expanded my skills to include machine learning, data visualization, and programming. I'm particularly interested in how data can drive decision-making and create value across different industries. Whether it's uncovering hidden patterns in consumer behavior or optimizing business processes through predictive modeling, I'm eager to tackle challenging problems with data-driven solutions.",
-  mission: "My goal is to bridge the gap between raw data and actionable insights, helping organizations make informed decisions based on solid evidence rather than intuition alone. I believe that data science, when applied thoughtfully, has the power to transform businesses and improve lives.",
+  intro: "Sou Tales Noronha, estudante de Ciência da Computação na UniAnchieta e profissional com experiência em sistemas empresariais. Estou em transição para a área de Ciência de Dados, com foco em análise, visualização e inteligência artificial.",
+  description: "Tenho conhecimento em Python, SQL e ferramentas como Pandas e Matplotlib. Já participei de hackathons, automatizei processos no meu trabalho atual e estou sempre buscando aplicar dados para resolver problemas reais com clareza e impacto.",
+  mission: "Meu objetivo é transformar dados em decisões mais inteligentes, unindo pensamento analítico com soluções práticas.",
 };
