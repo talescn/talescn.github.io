@@ -17,6 +17,14 @@ const Footer: React.FC = () => {
             <p className="text-neutral-600 dark:text-neutral-300 mb-4">
               Data scientist, analyst, and problem solver. Turning data into actionable insights.
             </p>
+            <div className="mb-4">
+              <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-2">
+                📧 <a href="mailto:talesnoronha40@gmail.com" className="hover:text-primary-300 transition-colors">talesnoronha40@gmail.com</a>
+              </p>
+              <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
+                📱 <a href="tel:+5511999446511" className="hover:text-primary-300 transition-colors">+55 11 99944-6511</a>
+              </p>
+            </div>
             <SocialLinks />
           </div>
           
@@ -47,21 +55,21 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-neutral-800 dark:text-white">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4 text-neutral-800 dark:text-white">Connect</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
-                  Blog <ExternalLink size={14} className="ml-1" />
+                <a href="https://linkedin.com/in/tales-noronha" target="_blank" rel="noopener noreferrer" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
+                  LinkedIn <ExternalLink size={14} className="ml-1" />
                 </a>
               </li>
               <li>
-                <a href="#" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
-                  Resume <ExternalLink size={14} className="ml-1" />
+                <a href="https://github.com/talescn" target="_blank" rel="noopener noreferrer" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
+                  GitHub <ExternalLink size={14} className="ml-1" />
                 </a>
               </li>
               <li>
-                <a href="#" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
-                  Data Science Resources <ExternalLink size={14} className="ml-1" />
+                <a href="mailto:talesnoronha40@gmail.com" className="text-neutral-600 dark:text-neutral-300 hover:text-primary-300 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center">
+                  Email <ExternalLink size={14} className="ml-1" />
                 </a>
               </li>
             </ul>
