@@ -89,40 +89,40 @@ export const socialLinks: SocialLink[] = [
 
 export const experiences: Experience[] = [
   {
-    title: 'Data Analyst Intern',
-    company: 'ABC Analytics',
-    period: 'Jan 2023 - Present',
-    description: 'Analyzing customer data to identify trends and patterns. Creating data visualizations and reports for stakeholders. Collaborating with cross-functional teams to improve data-driven decision making.',
-    skills: ['Python', 'SQL', 'Tableau', 'Data Analysis'],
+    title: 'Técnico em Suporte de Sistemas',
+    company: 'Expand Sistemas',
+    period: 'Jan 2023 – Presente',
+    description: 'Atuação em um escritório de contabilidade, realizando instalação, configuração e suporte de sistemas empresariais, como ponto eletrônico, frente de caixa e controle de jornada. Desenvolvimento de soluções em Python para automatizar tarefas operacionais, como o lançamento de extratos bancários.',
+    skills: ['Python', 'Automação de Processos', 'Suporte Técnico', 'Instalação de Sistemas'],
   },
   {
-    title: 'Research Assistant',
-    company: 'University Research Lab',
-    period: 'Aug 2022 - Dec 2022',
-    description: 'Assisted in data collection and analysis for research projects. Implemented statistical models using R and Python. Presented findings at department seminars.',
-    skills: ['R', 'Statistical Analysis', 'Research', 'Python'],
+    title: 'Desenvolvedor de Projeto em Hackathon',
+    company: 'Universidade Anchieta',
+    period: 'Jun 2025',
+    description: 'Participação em hackathon universitário com foco em inteligência artificial. Desenvolvimento de um MVP para melhorar a comunicação interna em empresas, com potencial de economizar mais de 200 horas mensais. Premiado com o 3º lugar entre as equipes.',
+    skills: ['Python', 'Flask', 'NLP', 'Trabalho em Equipe'],
   },
   {
-    title: 'Marketing Analyst',
-    company: 'XYZ Corporation',
-    period: 'Jun 2021 - Jul 2022',
-    description: 'Analyzed marketing campaign performance using Google Analytics. Created reports and dashboards to track KPIs. Provided data-driven recommendations to optimize marketing strategies.',
-    skills: ['Google Analytics', 'Excel', 'Data Visualization', 'Marketing'],
+    title: 'Projetos Acadêmicos e Pessoais (Freelance e Estudos)',
+    company: '2023 – Presente',
+    period: '2023 – Presente',
+    description: 'Criação de um sistema de alocação de professores com interface gráfica e alocação automática baseada em regras. Desenvolvimento de dashboards interativos com dados da Olist e análises com Python e bibliotecas de visualização. Produção de conteúdos gráficos para redes sociais da empresa com uso do Canva.',
+    skills: ['Python', 'Tkinter', 'Pandas', 'Canva', 'Data Visualization'],
   },
 ];
 
 export const education: Education[] = [
   {
-    degree: 'MS in Data Science',
-    institution: 'University of Data Sciences',
-    period: '2022 - Present',
-    description: 'Focusing on machine learning, statistical analysis, and big data technologies. Currently maintaining a 3.8 GPA.',
+    degree: 'Bacharelado em Ciência da Computação (em andamento)',
+    institution: 'Centro Universitário Anchieta – UniAnchieta',
+    period: '2022 – Presente',
+    description: 'Foco em ciência de dados, inteligência artificial, programação distribuída e automação. Participação ativa em projetos práticos, eventos e hackathons.',
   },
   {
-    degree: 'BS in Statistics',
-    institution: 'State University',
-    period: '2018 - 2022',
-    description: 'Graduated with honors. Coursework included probability theory, regression analysis, and computational statistics.',
+    degree: 'Formação Complementar – Carreira em Ciência de Dados',
+    institution: 'Alura – Cursos Online',
+    period: '2024 – Presente',
+    description: 'Trilha de formação voltada à análise e ciência de dados, com foco em estatística aplicada, visualização de dados e modelagem preditiva. Cursos concluídos ou em andamento: Data Science: analisando e prevendo séries temporais, Data Science: testando relações com Regressão Linear, Data Visualization: criando gráficos com bibliotecas Python, Data Science: explorando e analisando dados, Data Science: testando hipóteses. Habilidades desenvolvidas: Séries temporais, regressão linear, testes de hipótese, visualização com Seaborn/Matplotlib, análise exploratória e modelagem estatística com Python.',
   },
 ];
 
