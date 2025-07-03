@@ -1,4 +1,5 @@
 import React from 'react';
+import { TrendingUp } from 'lucide-react';
 import { aboutMe } from '../data/content';
 import { useTranslation } from 'react-i18next';
 
@@ -34,26 +35,23 @@ const AboutSection: React.FC = () => {
         </div>
         
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-lg text-primary-300 font-medium mb-4 text-center">{t('Who I Am')}</p>
-          <h3 className="text-3xl font-bold mb-6 text-center">
-            {t('A Passionate Data Scientist & Analytical Thinker').split('&')[0]} <span className="text-primary-300">{t('A Passionate Data Scientist & Analytical Thinker').split('&')[1]}</span>
-          </h3>
-          
-          <div className="space-y-6 text-center">
-            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg">
-              {t('aboutIntro')}
+          {/* New "My Data Journey" section */}
+          <div className="bg-white dark:bg-neutral-800 rounded-xl p-8 shadow-soft border-l-4 border-primary-300 mb-12">
+            <div className="flex items-center mb-6">
+              <div className="p-3 bg-primary-50 dark:bg-primary-900/30 rounded-lg text-primary-300 mr-4">
+                <TrendingUp size={28} />
+              </div>
+              <h3 className="text-2xl font-bold">
+                {t('My Data Journey')}
+              </h3>
+            </div>
+            
+            <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
+              {t('journeyDescription')}
             </p>
             
-            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg">
-              {t('aboutDescription')}
-            </p>
-            
-            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg mb-8">
-              {t('aboutMission')}
-            </p>
-            
-            <a href="#contact" className="btn-primary">
-              {t("Let's Connect")}
+            <a href="#projects" className="btn-primary">
+              {t('View My Projects')}
             </a>
           </div>
         </div>
