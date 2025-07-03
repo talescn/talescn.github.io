@@ -1,21 +1,20 @@
 import React from 'react';
-import { Lightbulb, Code, LineChart, Trophy } from 'lucide-react';
 import { aboutMe } from '../data/content';
 import { useTranslation } from 'react-i18next';
 
 interface FeatureCardProps {
-  icon: React.ReactNode;
+  emoji: string;
   title: string;
   description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => (
+const FeatureCard: React.FC<FeatureCardProps> = ({ emoji, title, description }) => (
   <div className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-soft hover:shadow-soft-lg transition-all duration-300 border-t-4 border-primary-300">
     <div className="flex items-center mb-4">
-      <div className="p-3 bg-primary-50 dark:bg-primary-900/30 rounded-lg text-primary-300">
-        {icon}
+      <div className="text-3xl mr-4">
+        {emoji}
       </div>
-      <h3 className="ml-4 text-xl font-semibold">{title}</h3>
+      <h3 className="text-xl font-semibold">{title}</h3>
     </div>
     <p className="text-neutral-600 dark:text-neutral-300">{description}</p>
   </div>
@@ -34,35 +33,22 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-primary-300 to-secondary-500 rounded-xl opacity-30 blur-lg"></div>
-              <div className="relative overflow-hidden rounded-xl shadow-soft">
-                <img 
-                  src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Tales Noronha working with data" 
-                  className="w-full h-auto rounded-xl"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto mb-16">
+          <p className="text-lg text-primary-300 font-medium mb-4 text-center">{t('Who I Am')}</p>
+          <h3 className="text-3xl font-bold mb-6 text-center">
+            {t('A Passionate Data Scientist & Analytical Thinker').split('&')[0]} <span className="text-primary-300">{t('A Passionate Data Scientist & Analytical Thinker').split('&')[1]}</span>
+          </h3>
           
-          <div>
-            <p className="text-lg text-primary-300 font-medium mb-4">{t('Who I Am')}</p>
-            <h3 className="text-3xl font-bold mb-6">
-              {t('A Passionate Data Scientist & Analytical Thinker').split('&')[0]} <span className="text-primary-300">{t('A Passionate Data Scientist & Analytical Thinker').split('&')[1]}</span>
-            </h3>
-            
-            <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
+          <div className="space-y-6 text-center">
+            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg">
               {t('aboutIntro')}
             </p>
             
-            <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
+            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg">
               {t('aboutDescription')}
             </p>
             
-            <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed">
+            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed text-lg mb-8">
               {t('aboutMission')}
             </p>
             
@@ -72,26 +58,26 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <FeatureCard 
-            icon={<Lightbulb size={24} />}
+            emoji="🔍"
             title={t('Problem Solver')}
-            description={t('I approach complex data challenges with creativity and analytical thinking to find innovative solutions.')}
+            description={t('I approach technical and analytical challenges with creativity and structured thinking, seeking practical and innovative solutions that add real value to business.')}
           />
           <FeatureCard 
-            icon={<Code size={24} />}
-            title={t('Technical Expert')}
-            description={t('Proficient in Python, R, SQL, and various data science tools and libraries for effective data manipulation.')}
+            emoji="🔧"
+            title={t('Real Solutions Builder')}
+            description={t('I integrate technical knowledge with real business demands, offering data solutions and simple automations that save time and effort.')}
           />
           <FeatureCard 
-            icon={<LineChart size={24} />}
+            emoji="📊"
             title={t('Data Storyteller')}
-            description={t('I transform complex data into clear, compelling visualizations and narratives that drive decision-making.')}
+            description={t('I transform raw data into clear and objective visualizations, connecting analyses to real contexts — whether for internal reports, academic presentations or strategic insights.')}
           />
           <FeatureCard 
-            icon={<Trophy size={24} />}
+            emoji="🚀"
             title={t('Continuous Learner')}
-            description={t('Always expanding my knowledge in the rapidly evolving field of data science and machine learning.')}
+            description={t('Dedicated student in the data field, I am always seeking new knowledge, currently focused on artificial intelligence, data modeling and distributed solutions with Docker.')}
           />
         </div>
       </div>
